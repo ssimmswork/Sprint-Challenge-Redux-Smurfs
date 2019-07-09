@@ -32,7 +32,7 @@ const initialState = {
 }
 
 
- export const rootReducer = ( state = initialState, action) => {
+ const rootReducer = ( state = initialState, action) => {
   console.log('reducer', action)
   switch(action.type) {
     case FETCH_SMURF:
@@ -80,3 +80,4 @@ const initialState = {
   }
 }
 
+export default rootReducer();
