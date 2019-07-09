@@ -80,4 +80,4 @@ const initialState = {
   }
 }
 
-export default rootReducer();
+export default rootReducer;

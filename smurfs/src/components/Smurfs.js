@@ -1,7 +1,7 @@
 import React from 'react'
 import rootReducer from '../reducers/index'
 import {connect} from 'react-redux';
-import {addSmurfs, postSmurf} from '../actions/index'
+import {addSmurfs} from '../actions';
 // import {postSmurfs} from '../actions/index'
 import {fetchSmurfs} from '../actions/index';
 
@@ -9,8 +9,7 @@ import {fetchSmurfs} from '../actions/index';
 class Smurfs extends React.Component{
     componentDidMount(){
         this.props.fetchSmurfs()
-        // this.props.addSmurfs();
-        // this.props.postSmurf();
+        
     }
      render(){
          console.log(rootReducer)
